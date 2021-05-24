@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../css/feedback.css" />
+    <link rel="stylesheet" href="../css/hf-styles.css" />
+    <title>Feedback Page</title>
+  </head>
+  <body>
+    <div class="hf header">
+      <a href="/">Header</a>
+    </div>
+    <main>
+      <div class="card fb-card">
+
+        <div class="card-header text-center">
+          <span class="fw-bolder">Your Feedback</span>
+          <button
+            type="button"
+            class="btn-close fd-btn-close"
+            aria-label="Close"
+          />
+        </div>
+
+        <div class="card-body m-4">
+          <h4 class="card-title ma-3 fw-bolder">
+            What is your opinion about this page ?
+          </h4>
+
+          <div class="react-container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-3 p-3 my-3 text-center rounded reaction">
+                <span class="emoji">😠</span>
+                <span class="title">Angry!</span>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 p-3 my-3 text-center rounded reaction">
+                <span class="emoji">🙁</span>
+                <span class="title">Sad!</span>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 p-3 my-3 text-center rounded reaction">
+                <span class="emoji">😃</span>
+                <span class="title">Happy!</span>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3 p-3 my-3 text-center rounded reaction">
+                <span class="emoji">😍</span>
+                <span class="title">Love!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="comment" class="card-title fw-bolder">
+              Would you like to add a comment ?
+            </label>
+          </div>
+          <div class="row m-1">
+            <textarea
+              class="rounded"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="row mt-5">
+            <label for="email" class="card-title fw-bolder">
+              If you'd like us to contact you regarding your feedbacks, please
+              provide your contact details here.
+            </label>
+          </div>
+          <div class="row m-1">
+            <input class="rounded" type="email" id="email" name="email" />
+          </div>
+        </div>
+
+        <div class="dropdown-divider mt-5"></div>
+        <div class="m-3 mx-4">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-primary">
+              <div>
+                <span>Submit</span>
+                <i class="material-icons fd-md md-20">send</i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="hf footer">
+      <span>Footer</span>
+    </div>
+  </body>
+</html>

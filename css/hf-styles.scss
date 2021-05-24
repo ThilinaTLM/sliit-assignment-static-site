@@ -1,0 +1,32 @@
+/* Only for header and footer sections */
+
+$h-size: 200px;
+$f-size: 200px;
+
+$bg-color: #e4e4e4;
+$fg-color: #b2bec3;
+
+.hf {
+    width: 100%;
+    background-color: $bg-color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span, a {
+        font-size: 48px;
+        color: $fg-color;
+        text-decoration: none;
+    }
+}
+
+.header {
+    height: $h-size;
+    margin-bottom: 30px;
+}
+
+.footer {
+    height: $f-size;
+    margin-top: 30px;
+}

@@ -1,0 +1,31 @@
+/* Only for header and footer sections */
+.hf {
+  width: 100%;
+  background-color: #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hf span, .hf a {
+  font-size: 48px;
+  color: #b2bec3;
+  text-decoration: none;
+}
+
+.header {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  height: 200px;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=hf-styles.css.map */

@@ -1,0 +1,63 @@
+$card-header: 80px;
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  width: 100%;
+  min-height: 70vh;
+}
+
+.fb-card {
+  width: 60%;
+
+  .card-header {
+    font-size: $card-header/3;
+    line-height: $card-header;
+    
+    button {
+      position: absolute;
+      right: 10px;
+      top: $card-header/3;
+      font-size: $card-header/3;
+    }
+  }
+
+  .react-container {
+    margin: 20px 10%;
+  }
+
+  .reaction {
+    cursor: pointer;
+    border: solid 2px #0000;
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        border: solid 2px rgba(0, 0, 0, 0.2);
+        transform: scale(1.08);
+    }
+
+    .emoji {
+      font-size: 70px;
+      display: block;
+    }
+
+    .title {
+      font-size: 20px;
+      display: block;
+    }
+  }
+}
+
+.fd-md {
+    position: relative;
+    margin: auto 5px;
+    top: 3px; /*Change this to adjust the icon*/
+}
+
+.md-20 {
+    font-size: 20px;
+}

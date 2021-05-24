@@ -1,0 +1,58 @@
+$bg-color: #e4e4e4;
+$fg-color: #131313;
+
+body {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column;
+
+  header {
+    flex: 0 1 100px;
+    color: $fg-color;
+    background-color: $bg-color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 30px;
+    }
+  }
+
+  main {
+    flex: 1 1 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+      background-color: $bg-color;
+      color: $fg-color;
+      text-decoration: none;
+
+      width: 300px;
+      height: 400px;
+      margin: 50px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      box-shadow: 1px 1px 5px black;
+
+      transition: all 200ms;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 4px 10px black;
+      }
+
+      span {
+        font-size: 28px;
+      }
+    }
+  }
+}

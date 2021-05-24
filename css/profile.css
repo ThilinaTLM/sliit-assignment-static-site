@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.avatar {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.avatar span {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ct-list {
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 3px;
+}
+
+.ct-list .ct-list-i1 {
+  min-width: 200px;
+  display: inline-block;
+}
+
+.ct-list .ct-list-i1::before {
+  font-weight: bold;
+  content: "•";
+  margin-right: 10px;
+}
+
+.ct-list .ct-list-i2 {
+  width: cal(100% - 200px);
+  display: inline-block;
+  word-wrap: 250px;
+}
+
+.ct-list .ct-list-i2::first-line {
+  text-indent: -6px;
+}
+
+.ct-list .ct-list-i2::before {
+  content: ":";
+  margin-right: 3px;
+}
+
+.ct-table table {
+  font-size: 13px;
+  width: 100%;
+}
+/*# sourceMappingURL=profile.css.map */
